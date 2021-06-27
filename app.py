@@ -1,16 +1,12 @@
-from typing import Optional, List, Dict
-from fastapi import FastAPI, status, Request, Depends, HTTPException
-from pydantic import BaseModel
-from fastapi.staticfiles import StaticFiles
-import uvicorn
-from starlette.middleware.sessions import SessionMiddleware
-import time
-from fastapi.responses import RedirectResponse, FileResponse, HTMLResponse, PlainTextResponse
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm, OpenIdConnect
+from fastapi import FastAPI, Request
+from fastapi.responses import RedirectResponse, HTMLResponse
+
 from authlib.integrations.starlette_client import OAuth
 from starlette.config import Config
+from starlette.middleware.sessions import SessionMiddleware
+
 import json
+import uvicorn
 
 
 app = FastAPI()
