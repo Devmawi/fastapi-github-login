@@ -1,4 +1,4 @@
-# Github login demo with FastAPI
+# GitHub login demo with FastAPI
 
 First, copy `.env.sample` to `.env`:
 
